@@ -1,0 +1,114 @@
+.car-detail-container {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.car-detail-content {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.car-image-container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.car-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.tipo-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.precio-dia {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.precio {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+.periodo {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.caracteristicas-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.caracteristicas-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.caracteristicas-list i {
+  color: #0d6efd;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.spec-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.spec-item i {
+  color: #0d6efd;
+  font-size: 1.2rem;
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+}
+
+.breadcrumb a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .car-detail-content {
+    padding: 1rem;
+  }
+  
+  .caracteristicas-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+} 

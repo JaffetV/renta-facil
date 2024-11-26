@@ -1,0 +1,75 @@
+.vehiculos-container {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.vehiculos-view {
+  display: grid;
+  gap: 2rem;
+}
+
+.vehiculos-view.grid {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.vehiculos-view.list .vehiculo-card {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.vehiculo-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.vehiculo-card:hover {
+  transform: translateY(-5px);
+}
+
+.vehiculo-imagen {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.vehiculo-info {
+  padding: 1.5rem;
+}
+
+.caracteristicas-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.caracteristicas-list li {
+  margin-bottom: 0.5rem;
+}
+
+.caracteristicas-list i {
+  color: #0d6efd;
+  margin-right: 0.5rem;
+}
+
+.precio-alquiler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.precio {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+@media (max-width: 768px) {
+  .vehiculos-view.list .vehiculo-card {
+    grid-template-columns: 1fr;
+  }
+} 

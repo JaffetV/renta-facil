@@ -1,0 +1,61 @@
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg') no-repeat center center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-box {
+  max-width: 900px;
+  margin: 2rem auto 0;
+}
+
+.card {
+  transition: transform 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.price-tag {
+  color: #0d6efd;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.feature-box {
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px);
+}
+
+.feature-box i {
+  color: #0d6efd;
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  padding: 0.5rem 1.5rem;
+} 

@@ -1,0 +1,12 @@
+.navbar-brand i {
+  margin-right: 8px;
+}
+
+.nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.9) !important;
+} 
